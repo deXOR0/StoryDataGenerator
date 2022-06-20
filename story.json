@@ -1,0 +1,25 @@
+{
+    "story_title": "The Secretary",
+    "story_intro": "sadlkamdakldmalsdmalsd",
+    "chapters": [
+        {
+            "chapter_title": "Chapter 1: Asdsada",
+            "chapter_logo": "asdasdasd.png",
+            "messages": [
+                {
+                    "type": "UserConversation",
+                    "text": "Hello, Compy!"
+                },
+                {
+                    "type": "CompyConversation",
+                    "text": "Lorem"
+                },
+                {
+                    "type": "SingleChoice",
+                    "prompt": "Select an option",
+                    "options": ["A", "B", "C"]
+                }
+            ]
+        }
+    ]
+}
