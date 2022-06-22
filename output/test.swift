@@ -1,5 +1,5 @@
 ﻿Story("The Secretary", "The mayor is a very busy man. As a mayor, he has a lot of responsibilities. As time goes on, his workload seems to keep increasing. He decided that he needed help and hired you as his secretary. As a secretary, you're responsible for managing the mayor's schedule, setting up meetings, retrieving documents, etc.", "book", "background", [
-    Chapter("Chapter 1: Where are my Documents?", "chapter1Logo", 
+    Chapter("Where are my Documents?", "chapter1Logo", 
     [
         CompyConversationMessage("Hey, %@! So how was your first day being the mayor's secretary?"), 
         UserConversationMessage("It's pretty cool I guess. But..."), 
@@ -10,8 +10,10 @@
         CompyConversationMessage("How many?"), 
         UserConversationMessage("When I got to his office, all I can see were documents! Piles and piles of them. There are documents stacked on the floor, sofa, desk, and cabinets."), 
         CompyConversationMessage("Wow, how does he know which one he needed?"), 
-        UserConversationMessage("""That is the problem. He hasn't been diligent in organizing his documents. 
-        It's all scattered around. They are not kept in order or anything."""), 
+        UserConversationMessage("""
+        That is the problem. He hasn't been diligent in organizing his documents. 
+        It's all scattered around. They are not kept in order or anything.
+        """), 
         UserConversationMessage("Throughout the day he would say something like \"Please bring me the document numbered 476 on the water treatment facility planning\", or \"Please bring me the document numbered 788 on public transportation mismanagement complaints\"."), 
         CompyConversationMessage("Oh! At least you know the number and title of the document."), 
         UserConversationMessage("Not really. Yes, there is a number written on the document's cover. But there are no titles whatsoever. I gotta read it to know which document it is."), 
@@ -63,7 +65,7 @@
         UserConversationMessage("Yeah, but it's a hassle to have to check each documents one by one. Sometimes I even   miss it and I have got to start over again."), 
         SingleChoiceMessage(
             "Do you think it is necessary to check each document one by one when looking for the        document in the     pile?", 
-            ["Yes", "No"]
+            ["Yes", "No"],
             "Yes", 
             CompyTrueMessage("Yes, it is actually necessary in this case, because the documents are scattered and not   stored in order. If you skip around or look for it randomly, you might miss the document that you're looking  for."), 
             CompyFalseMessage("Unfortunately, you do need to check each document in this case, because the documents are    scattered and not stored in order. If you skip around or look for it randomly, you might miss the document     that you're looking for."), 
@@ -110,8 +112,9 @@
             CompyFalseMessage("Sorry. But the right answer is \"abstraction.\""), 
             false
         ),
-    ],
-    Chapter("Chapter 2: Must Go Faster!", "Chapter 2: Must Go Faster!", [ 
+    ]),
+    Chapter("Chapter 2: Must Go Faster!", "Chapter 2: Must Go Faster!", 
+    [ 
         CompyConversationMessage("Congratulation! I heard that you've been officially named the mayor's personal secretary."), 
         UserConversationMessage("Thanks Compy! I couldn't have done it without you."), 
         UserConversationMessage("Previously, you made me realize that I don't have to read through the document since there is a pattern of document numbers and document topics being correlated to one another."), 
@@ -163,7 +166,7 @@
         CompyConversationMessage("1, 8, 19, 31, 43, 75, 88, 96, 100, 223"), 
         CompyConversationMessage("Now, instead of telling you that you're wrong when you choose the wrong number, I can tell you to go higher or lower. Let's play another game."), 
         SingleChoiceMessage(
-            "1", "223", "31", "1", "8", "19", "31", "43", "75", "88", "96", "100", "223"], 
+            ["1", "223", "31", "1", "8", "19", "31", "43", "75", "88", "96", "100", "223"], 
             "100", 
             CompyTrueMessage("Congratulation! You guessed correctly!"), 
             CompyFalseMessage("Go lower!"), 
@@ -271,11 +274,11 @@
         UserConversationMessage("Wow! So... how can you reorder the documents?"), 
         CompyConversationMessage("Let's meet again tomorrow to figure it out!"), 
         Narration("To be continued in the next chapter"), 
-    ],
+    ]),
     Chapter("Chapter 3: Sort your Problems!", "chapter3logo", [
         Narration("The next day"), 
         CompyConversationMessage("Well well well, if it isn't the busiest secretary in town."), 
-        CompyConversationMessage("Previously you have found a way to quickly search through the documents efficiently."
+        CompyConversationMessage("Previously you have found a way to quickly search through the documents efficiently.")
         UserConversation("Yes, but the catch is, that the documents must be stored in order."), 
         UserConversationMessage("What a shame! If only the documents are stored properly as you needed, I can perform the binary search!"), 
         CompyConversationMessage("But wait! You are a clever secretary! You know how to abstract and decompose problems, recognize patterns, and develop algorithms. Cool!"), 
@@ -408,4 +411,5 @@
         CompyConversationMessage("There you go! All done! Now you can sort and search through the documents very quickly."),
         UserConversationMessage("Thanks, Compy!"),
         CompyConversationMessage("You’re very welcome, %@!")
-    ]
+    ])
+])
