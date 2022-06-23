@@ -156,11 +156,12 @@ Story("Movie Night", "What a boring weekend I am having right now. Just sitting 
     ),
     Chapter("Buying Tickets", "Chap_Buying Tickets",
     [
-        // "Last time, you had planned on what tasks that needs to be done when going on a movie night with friends. Right now you will continue to work on the tasks on the list.", (ini kok gk ada promptnya ya?)
+        Narration("Last time, you had planned on what tasks that needs to be done when going on a movie night with friends. Right now you will continue to work on the tasks on the list."),
         CompyConversationMessage("Now let's see what we need to do first."),
         UserConversationMessage("From what I listed down, I need to gather friends to watch the movie together."),
         UserConversationMessage("Maybe I Should contact them to see if anyone is available to watch it tonight."),
-        CompyConversationMessage("Okay, go and ask them."), //'_Few moments later…_' (mana nih promptnya?),
+        CompyConversationMessage("Okay, go and ask them."), 
+        Narration("Few moments later…"),
         UserConversationMessage("Hey Compy, 4 of my friends want to watch the movie together!"),
         CompyConversationMessage("Alright, now we need to choose which movie to watch."),
         UserConversationMessage("Okay then I will ask them what kind of movie that we can agree to watch together."),
@@ -265,7 +266,7 @@ Story("Movie Night", "What a boring weekend I am having right now. Just sitting 
     ),
     Chapter("Seating Placement", "Chap_Seating Placement",
     [
-        //We did chose which movie to watch. Now we're trying to reserve the seats in the cinema for each group member. (promptnya gimana?)
+        Narration("We did chose which movie to watch. Now we're trying to reserve the seats in the cinema for each group member."),
         CompyConversationMessage("Now, onto the next task that is buying tickets online."),
         UserConversationMessage("I'm using my phones app to buy the seats. I'm buying 5 seats for every member."),
         UserConversationMessage("Hmm, some of the group members remind me that they will be ordering food later on inside the cinema. If I'm not mistaken, the staff will only bring the food from the same order to one designated seat."),
