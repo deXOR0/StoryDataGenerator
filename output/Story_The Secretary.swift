@@ -77,7 +77,7 @@
         CompyConversationMessage("Not only can we start arranging the task that needs to be done, but we can also   prioritize which one we need to do first."), 
         CompyConversationMessage("It is such a useful skill to have especially in programming where one program could   have varieties of features, we need to break down what we need to be working on first and prioritize which    feature is the most critical in order for the program to function properly."), 
         UserConversationMessage("Thanks Compy! I'll keep that in mind!"), 
-        Narration('A few days later'), 
+        Narration("A few days later"), 
         CompyConversationMessage("Hey, %@! How's it been?"), 
         UserConversationMessage("Hi Compy! It's been going well. As time goes on I realize that the document's numbers  on the cover is unique. It never repeats!"), 
         SingleChoiceMessage(
@@ -278,7 +278,7 @@
     Chapter("Chapter 3: Sort your Problems!", "chapter3logo", [
         Narration("The next day"), 
         CompyConversationMessage("Well well well, if it isn't the busiest secretary in town."), 
-        CompyConversationMessage("Previously you have found a way to quickly search through the documents efficiently.")
+        CompyConversationMessage("Previously you have found a way to quickly search through the documents efficiently."),
         UserConversation("Yes, but the catch is, that the documents must be stored in order."), 
         UserConversationMessage("What a shame! If only the documents are stored properly as you needed, I can perform the binary search!"), 
         CompyConversationMessage("But wait! You are a clever secretary! You know how to abstract and decompose problems, recognize patterns, and develop algorithms. Cool!"), 
